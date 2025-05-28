@@ -130,29 +130,6 @@ The frontend API configuration can be found in `front-chat/src/config/AxiosHelpe
 export const baseURL = "http://localhost:8081";
 ```
 
-## Common Issues & Solutions
-
-1. Port Already in Use
-   ```bash
-   # Check which process is using the port
-   lsof -i :8081
-   
-   # Kill the process
-   kill -9 <PID>
-   ```
-
-2. MongoDB Connection Issues
-   - Ensure MongoDB is running:
-     ```bash
-     brew services list
-     # or start if not running
-     brew services start mongodb-community
-     ```
-
-3. CORS Issues
-   - The backend is configured to accept requests from all localhost ports
-   - If you're running the frontend on a different port, it should work automatically
-
 ## Development
 
 1. Backend Development
@@ -163,4 +140,10 @@ export const baseURL = "http://localhost:8081";
    - Vite provides hot module replacement (HMR)
    - Changes to React components will reflect immediately
 
+## Screenshots
 
+### Creating a Chat Room
+![Create Room Screenshot](./create_room.png)
+
+### Chat Interface
+![Chat Interface Screenshot](./chat_ss.png)
