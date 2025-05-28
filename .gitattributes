@@ -1,4 +1,18 @@
+# Count only Java files for GitHub language stats
 *.java linguist-detectable=true
+
+# Ignore JavaScript, HTML, CSS, JSON, and Markdown files
 *.js linguist-detectable=false
+*.jsx linguist-detectable=false
+*.ts linguist-detectable=false
+*.tsx linguist-detectable=false
 *.html linguist-detectable=false
 *.css linguist-detectable=false
+*.json linguist-detectable=false
+*.md linguist-detectable=false
+
+# Ignore frontend folders if present
+frontend/* linguist-detectable=false
+node_modules/* linguist-detectable=false
+public/* linguist-detectable=false
+
